@@ -5,11 +5,11 @@ with open("jsonformatter.txt", mode='r') as file:
 def get_host() -> str:
     return __configs['host']
 
-def get_name() -> str:
+def get_user() -> str:
     return __configs['user']
 
 def get_password() -> str:
     return __configs['password']
 
-def db_url() -> str:
+def gete_db_name() -> str:
     return __configs['db_name']
