@@ -3,10 +3,10 @@ import db_config
 
 try:
     connection = psycopg2.connect(
-        host=db_config.host,
-        user=db_config.user,
-        password=db_config.password,
-        database=db_config.db_name
+        host=db_config.get_host(),
+        user=db_config.get_user(),
+        password=db_config.get_password(),
+        database=db_config.get_db_name()
     )
     connection.autocommit = True
 
